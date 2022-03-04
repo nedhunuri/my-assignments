@@ -1,0 +1,138 @@
+<!doctype html>
+  <html>
+        <head>
+		      <title> HTML DESCRIPTION </TITLE>
+		</head>	  
+	<body>
+	     <h1> HTML</h1>
+		 <dialog  open> learn html</dialog>
+		 <hr>
+		 <h3> Table of contents</h3>
+		 <ol>
+		    <li> what is html </li>
+		     <li> Tags</li>
+		 <ol type=A>
+		    <li> HTML HEADINGS </li> 
+			<li> HTML PARAGRAPHS </li> 
+			<li> HTML LINKS </li> 
+			<li> HTML LISTS </li> 
+		<ol type=i>
+             <li> unordered lists</li>
+			 <li> ordered lists</li>
+			 <li>description lists</li>
+			 <li> nested lists</li>
+		</ol>
+      	</ol>
+		    <li>useful links</li>
+		 </ol >
+		 <hr>
+		     <p>1.<b>HTML</b> is a markup language for describing <span>web documents</span>(web pages).</p>
+		     <p>hyper text markup <mark> language</mark>.</p>
+		     <p>With <dfn>HTML<dfn> you <del>can create your </del>own Website</p>
+		     <p>HTML is <ins>easy to</ins>learn</p>
+		     <p>HTML consists of a <sup>series of elements</sup>.</p>
+		     <p>elements tell the <sub>browser how to display the content</sub>.</p>
+		  <ul>
+		     <li>HTML stands for <b>H</b>yper <i>T</i>ext <b>M</b>arkup <i>l</i>anguages</li>
+			 <li> A markup language is a set of <b>markup</b> <i>tags</i>.</li>
+			 <li>Html documents are described by <strong>html tags</strong>.</li>
+			 <li>Each html tag <strike>tags</strike> <b>describes</b> different document content</li>
+		</ul>
+		<h3>. <strong>A.HTML HEADINGS</h3>
+		      <p> use html headings for headings only.Dont use <small>headings to make</small> text Big or bold.<br>
+		       search engines <em>use your headings</em> to index the structures and content of our webpages</p> 
+		      <p>EXAMPLE OF HEADINGS </p>
+		      <h1> THIS IS H1 HEADING </h1>
+		      <h2> THIS IS H2 HEADING </h2>
+		      <h3> THIS IS H3 HEADING </h3>
+		      <h4> THIS IS H4 HEADING </h4>
+		      <h5> THIS IS H5 HEADING </h5>
+		      <h6> THIS IS H6 HEADING </h6>
+		     <h4>B.HTML PARAGRAPHS </h4>
+	             <p>	With HTML, you cannot change the output by <em>adding extra spaces</em>or extra lines in your HTML code<br>
+	             Use <br> if you want a line break (a new line) without starting a new paragraph</p>
+	        <h5> HTML LINKS</h5>
+	       <p> links are defined with the "a" tag <br>href attribute specifies the destination address</p>
+	        <h2> HTML LISTS</h2>
+            <p><b><em>unordered</em>list</b>.<br>an unordered list starts with the "ul" tag.</p>
+        <ul>
+		    <li>tags</li>
+		     <li>elements</li>
+		    <li>attributes</li>
+		</ul>
+    <p><b> ORDERED LISTS</b><br> An ordered list starts with "ol" tag</p>
+    <ol type="1">
+	    <li>paragraph</li>
+		<li>style</li>
+		<li>forms</li>
+		<li>formatting</li>
+	</ol>	
+	<ol type="a">
+	    <li>links</li>
+		<li>tables</li>
+		<li>favicon</li>
+		<li>images</li>
+	</ol>
+	<ol type="I">
+	    <li>blockline</li>
+        <li>inline</li>
+		<li>classes</li>
+	</ol>	
+	<ol type="i">
+	    <li>id</li>
+        <li>frames</li>
+		<li>javascript</li>
+	</ol>
+	<ol start="10">
+	    <li>id</li>
+        <li>frames</li>
+		<li>javascript</li>
+	</ol>	
+<p><b>NESTED LISTS<br>list can aslo be nested <abbr>lists inside lists</abbr>:</b>.</p>
+<ol>
+   <li>links</li>
+   <li>lists</li>
+ <ol>
+    <li><abbr>file paths</abbr>.</li>
+<li>quotations</li>
+</ol>
+<li> headings</li>
+</ol>	
+<p><i> description lists</i><br> its is a list of terms <b>with a description</b> of <small> each term</small>.</p>
+	<dl><br><br>
+	<dt>element to define the description term</dt>.<br>
+	<dd>element to describe the term in a description list</dd>
+<p> 3.useful links</p>	
+<ul>
+    <li>
+	<a href="https://www.w3schools.com/html/html_lists_unordered.asp"> unordered lists</a>
+	</li>
+	<li>
+	<a href="https://www.w3schools.com/html/html_lists_ordered.asp"> ordered lists</a>
+	 </li>
+</ul>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Eo1W9G49_tk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</body>
+	</html>
+		
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			 
+			 
+			 
+		 
+		 
