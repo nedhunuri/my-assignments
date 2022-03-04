@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+     <head>
+          <title> FORM EXAPMLE</title>
+     </head>
+ <body>
+     <form action="/action_page.php" target="_blank">
+	 <fieldset>
+	 <legend>student info</legend>
+        <h3> PERSONAL DETAILS</h3>
+		<div>
+ <label for="fname">first name: </lable>      
+       <input type="text" name="fname" id="fname">
+	   <br><br>
+<label for="lname">last name:</label>
+<input type="text" name="lname" id="lname">
+</fieldset>   
+	   <br><br>
+<label for="birthday">birthday:</label>
+<input type="date" id="birthday" name="birthday">
+<input type="submit" value="submit"> <br><br>
+   password:
+       <input type="text" name="password" id="password"><br><br>
+       Email-id:
+       <input type="text" name="name" id="name" placeholder="Enter email address"><br><br>
+       Gender:
+      <input type="radio" name="radiogroup1" id="radiogroup1" value="radiogroup1">male
+      <input type="radio" name="radiogroup1" id="radiogroup1" value="radiogroup1">female<br><br>
+      contact#: <input type="text" name="mobile" id="mobile">
+	  </div>
+   <h3>EDUCATIONAL QUALIFICATION</h3>
+school: <select name="school" id="school" size="3">
+         <option value="kakatiya">kakatiya</option>
+		 <option value="kakatiya">alphores</option>
+		 <option value="kakatiya">vidhyadhari</option>
+		 <option value="kakatiya">gowtham model</option>
+		 </select>
+		 <br><br>
+career:<input list="career" name="career">
+       	<datalist id="career">
+	<option value="btech" </option>
+	<option value="pharmacy" </option>
+	<option value="MMBS" </option>
+	<option value="ARTS" </option>
+	<option value="NURSING" </option>
+	</datalist>
+	
+		  
+Degree: <select name="degree" id="degree">
+        <option selected>-- select group--</option>
+        <option>BTECH</option>
+        <option>BCOM</option>
+        <option>BSC</option>
+        <option>BA</option>
+        <option>BED</option>
+    </select><br>
+<br>
+Engineering: <select name="eng" id="eng">
+            <option selected>--select group--</option>
+            <option>ECE</option>
+            <option>CSE</option>
+             <option>EEE</option>
+            <option>MECH</option>
+            <option>CIVIL</option>
+</SELECT><br>
+<br>
+Hobbies: <input type="checkbox" name="checkboxgroup1" value="checkbox" id="checkboxgroup1">playing chess
+<input type="checkbox" name="checkboxgroup2" value="checkbox" id="checkboxgroup2">reading books
+<h3>ADDRESS</h3>
+<textarea name="textarea" cols="20" rows="25" id="textarea"></textarea> <br>
+<br>
+Attach resume: <input type="file" name="filefield" id="filefield"><br><br>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+button type="button" onclick="alert('form submitted!')">click me!</button>
+
+    </form>
+          </body>
+               </html>
+
