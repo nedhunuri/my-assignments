@@ -1,0 +1,86 @@
+<html>
+<head>
+<title> john's pizza delivery</title>
+</head>
+<body>
+<h1 style="text-align: center;"> john's pizza delivery</h1>
+<h2 style="text-align: center;"> online delivery form</h2>
+<form method="post" action="/action_page.php" target="_self">
+<fieldset>
+<legend>HELLO PIZZA</legend>
+<label for="name">name </label>
+<input type="text" name="name" id="name" value="john" readonly> <br><br>
+<label for="telephone">telephone </label>
+<input type="text" name="telephone" id="telephone" required/><br><br>
+<label for="address">address</label>
+<input type="text" name=""address" id="address"  required/><br><br>
+<label for="mail">mail</label>
+<input type="text" name=""mail" id="mail"  disabled><br><br>
+<label for="town">town</label>
+<input type="text" name="town" id="town"  required/><br><br>
+</fieldset>
+<h2 style="text-align:center;"> pizza menu</h2>
+<p><b> menu</b>.</p>
+<input list="pizza">
+<datalist id="pizza">
+<option value="Margherita"> Margherita Pizza</option>
+<option value="Cheese n Corn Pizza"> Cheese n Corn Pizza</option>
+<option value="Fresh Veggie Pizza"> Fresh Veggie Pizza</option>
+<option value="Chicken Fiesta Pizza"> Chicken Fiesta Pizza</option>
+</datalist>
+<input type="submit">
+<p> required fields</p>
+<table>
+<tr>
+<td>
+<h3> toppings</h3>
+<label><input type="radio" name="toppings" id="marg" required/>Margherita</label><br>
+<label><input type="radio" name="toppings" id="cheese" required/>cheese</label><br>
+<label><input type="radio" name="toppings" id="meat" required/>Meat feat</label><br>
+</td>
+<td>
+<h3>size</h3>
+<label><input type="radio" name="base" id="s" required/>small</label><br>
+<label><input type="radio" name="base" id="m" required/>medium</label><br>
+<label><input type="radio" name="base" id="l" required/>large</label><br>
+</td>
+<td>
+<h3>EXTRAS</h3>
+<label><input type="checkbox" name="extra" id="mu" required/>mushrooms</label><br>
+<label><input type="checkbox" name="extra" id="pe" required/>pepper</label><br>
+<label><input type="checkbox" name="extra" id="ch" required/>cheese</label><br>
+</td>
+</tr>
+</table>
+<br>
+<table>
+<tr>
+<td><label for="del">Preferred<b> delivery</b> time: </label></td>
+<td><input type=time min="11:00" max="21:00" step="900" name="del" id="del" required /></td>
+</tr>
+<tr>
+<td><label for="instr">Delivery instructions: </label></td>
+<td><textarea name="instr" id="instr" maxlength="1000"> </textarea> </td>
+</tr>
+<tr>
+<td><label for="rating">rating </label></td>
+<td><input type="range" min="0" max="100"  name="rating" id="rating" required </td>
+</tr><br><br>
+<tr>
+<td><button type="submit"  id="Submit">Submit</button></td>
+<td><button type="reset"  id="reset">reset</button></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
