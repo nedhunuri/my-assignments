@@ -1,0 +1,68 @@
+<html>
+    <head>
+	   <style>
+	    #heading{
+		   text-align:center;
+		  }
+	    .body{
+           text-align:center;
+		   font-size: 10px ;
+		   }  
+		.form{ 
+		     background-color:green;
+		     text-align:center;
+			 padding: 20px 30px;
+		    }
+		.formclas{
+		       margin-bottom:25px;
+                }
+        #formclass1 {
+		margin-bottom:25px;
+                 }		
+        #options {
+		 color: red;
+		 background-color: blue;
+		}
+		[type*="submit"]{
+		background-color:purple;}
+		.idnum{
+		 background-color:grey;}
+		#class{
+		background-color: slateblue;}
+		.universal{
+		background-color: violet;}
+		
+        
+    	   </style>
+	</head>   
+	   <body>
+	       <h1 id="heading">FORM USING HTML AND CSS</h1>
+		     <form class="form">
+		     <div class="formclass">
+		     <label for="name" id="label"></label>
+		     <input type="text" id="name" placeholder="ENTER YOUR NAME"/></div>
+		     <div class="formclass">
+		     <label for="email" id="label"></label>
+		     <input type="email" id="email" placeholder="ENTER YOUR email"/></div>
+		     <div id="formclass1">   
+		     <label for="age" id="label"></label>
+		     <input type="num" id="name" placeholder="ENTER YOUR age"/></div>
+		     <div id="formclass1">   
+		     <label for="num" id="label"></label>
+		     <input type="tel" id="num" placeholder="ENTER YOUR Numnber"/></div>
+		     <select name="language" id="language">
+             <option id="options" value=" "> select language</option>	
+             <option id="options" value="ENGLISH "> ENGLISH</option>	
+             <option id="options" value="TELUGU"> TELUGU</option>
+             <option id="options" value="HINDI "> HINDI </option>
+		    </select>
+		     <label for="submit" value="submit"></label>
+		    <input type="submit" id="submit"/><br><br>
+		   </form>
+		   <h1 class="idnum">The id selector uses the id attribute of an HTML element to select a specific element.</h1>
+		   <h2 id="class">The class selector selects HTML elements with a specific class attribute.</h2>
+		   <h3 class="universal">the universal selector (*) selects all HTML elements on the page.</h3>
+          		 
+	   </body>
+	
+</html>
