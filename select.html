@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <style>
+	*{background-color: grey;}
+	h1{
+	  text-align: center;
+	  }
+	 [class="cont"]
+	 {
+	   display:flex;
+	   width:80%;
+	   padding: 10px;
+	   background:#ddd;
+	   border: 1px solid red;
+	   }
+	   [id="crown"]
+	   {
+	   width:300px;
+	   height: 250px;
+	   border-style: dotted;
+	   }
+	   .box1
+	   {
+	   flex:1;
+	   padding: 10px;
+	   background: orange;
+	   border-style: double;
+	   }
+	   
+	   }
+	   [name*="cat"]
+	   {
+	   flex:1;
+	   padding-top: 50px;
+	   background: grey;
+	   border-style: dotted;
+	   }
+	   .box3
+	   {
+	   flex:1;
+	   width: 250px;
+	   height: 300px;
+	   padding-bottom:40px;
+	   background:yellow;
+	   border-style: dashed;
+	   }
+	   [value|="text4"]
+	   {
+	   flex:1;
+	   background:blue;
+	   border-style: outset;
+	   }
+	   [name^="box"]
+	   {
+	   flex:1;
+	   background:purple;
+	   border-style: inset;
+	   }
+	   [id$="six"]
+	   {
+	   flex:1;
+	   background: red;
+	   border-style: solid;
+	   }
+	   .image1
+	   {
+	     width: 300px;
+		 height: 200px;
+		 padding: 10px;
+		 margin : 10px 10px ;
+		 border-color: yellow;
+		 border-style: dotted;
+		 }
+		[type~="image"]
+		{
+		 padding: 10px;	 
+		 width: 250px;
+		 height: 200px;
+		 margin : 10px 10px ;
+		 border-style: dotted;
+		 }
+    </style>
+  </head>
+     <body>
+	    <h1>IMAGES USING DIV</h1>
+	   <div class="cont">
+	      <div class="box1">
+		    <img id="crown" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPK9Vlz-6a40uy5_li_MNwoPHRwaWOB1GvVg&usqp=CAU" title="cat in grass"/>
+		 </div>
+		  <div name="cat">
+		     <img  type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEoD8JgbX_XMDFwu1eySXMTblcbCiJ9Lx0WA&usqp=CAU" target="_blank" /> CATS READY FOR CLICK</div>
+		  <div class="box3">
+		     <img type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzvKwk1CVZpdpf9lKOac7FeZVrKIAw2QIc3g&usqp=CAU" target="_self"/>WHITE CAT </div>
+          </div><br>
+       <div class="cont"> 		
+		  <div value="text4">
+		     <img class="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwywGiiXTEaAG7t4kMPEEjbqXLyBh3pMVOlQ&usqp=CAU" target="_parent" /> PLAYING WITH A FLY </div>
+		  
+		  <div name="box-five">
+		      <img class="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3CVuZlM7DVXsN6WW20ekieCmW99XtmmHJvw&usqp=CAU" target="_top" /> YOWLING</div>
+		  <div id="box-six">
+		     <img class="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrBxzWtX7GmxzMlHTLWjpYcxno9t4IiPPP4w&usqp=CAU"/>LAUGHING CAT</div>
+	   </div>	  
+		  
+	   
+	   </div> 
+         
+	 </body>
+</html>	 

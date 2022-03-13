@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <style>
+	*{
+	background-color: grey;
+	}
+	.first::first-letter {
+  color: blue;
+  font-size: xx-large;
+}
+	p::first-line {
+	color: pink;
+	font-family :papyrus;
+	font-size: 30px;
+	}
+	ol li:first-child ,ol li:last-child{
+	font-size: 25px;
+	font-family : verdana;
+	}
+
+	ol li:nth-child(2n){
+	color: purple;
+	font-size: 25px;
+	}
+	ol li:nth-child(2n+1){
+	color: gold;
+	}
+	ol li:nth-child(7){
+	color: green;}
+	.under_line:link{
+	color: yellow;}
+	.co_ders:visited{
+	color: cyan;}
+	.you_tube:hover{
+	color: tomato;}
+	.by_jus:active{
+	color: orange;}
+	h1::before{
+	content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGmO3XgIVB36ga_yWAvL04Ygf7vhwKNngEug&usqp=CAU);
+	}
+	.con::after{
+	content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLMsE6g6uveV0zxWNizTrHAajQERcNk-Xqrg&usqp=CAU);
+	}
+	.ma_rk::marker {
+	color: red;
+	font-size: 23px;}
+	h2::selection{
+	color: blue;
+	background:pink;}
+	
+	</style>
+  </head>  
+  <body>
+    <a href="#">unstyled link</a>
+	<a href="#" class="under_line"> styled link</a>
+	<a href="https://www.10000coders.co/" class="co_ders">10000 coder</a>
+	<a href="https://www.youtube.com/" class="you_tube"> youtube link</a>
+	<a href="https://byjus.com/" class="by_jus"> byjus link</a>
+    <p class="first">The ::first-letter pseudo-element can only be applied to block-level elements.</p>
+	<p class="css">A CSS pseudo-element is used to style specified parts of an element.<br>
+	Style the first letter, or line, of an element<br>
+	Insert content before, or after, the content of an element</p>
+	  <ol class="order">
+	     <li class="one">CSS pseudo-classes are used to add special effects to some selectors. </li>
+	     <li class="one">You do not need to use JavaScript or any other script to use those effects.</li>
+	     <li class="one">A CSS class is an attribute used to define a group of HTML elements in order 
+	     to apply unique styling and formatting to those elements with CSS.</li>
+	     <li class="one">Pseudo-class are different from CSS classes but they can be combined.</li>
+	     <li class="one">Pseudo-class names are not case-sensitive.</li>
+	     <li class="one">:first-child pseudo-class matches a specified element that is the first child of another element and adds 
+	     special style to that element that is the first child of some other element.</li>
+	     <li>a class selector is formatted as a period (.)
+	      character followed by the name of the class</li>
+	  </ol>  
+	   <h1> the content</h1>
+	   <p>The ::before pseudo-element can be used to insert some
+	   content before the content of an element.</p>
+	   <h1> check the content that is given before the heading</h1>
+         <p class="con">The ::after pseudo-element can be used to insert
+		some content after the content of an element.</p>
+		<ul>
+		   <li class="ma_rk">hello</li>
+		   <li class="ma_rk">people</li>
+		   <li class="ma_rk">how are you doing?</li>
+		</ul>	
+        <h2> THE SELECTION PSEUDO ELEMENT WILL ALLOWS YOU TO SELECT ANY TEXT ON THE PAGE</h2>	
+	</body>
+</html>	
+	
+ 	
+  
