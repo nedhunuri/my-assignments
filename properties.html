@@ -1,0 +1,95 @@
+<html>
+<head>
+<style>
+    *{
+	   padding:0;
+	   margin: 0;
+	}
+	body
+	{
+	   padding: 0 20px 30px 0;
+	   background : yellow;
+	   font-family: verdana;
+	}
+	.contain{
+	    display: flex;
+		flex-wrap:wrap;
+		align-items: center;
+       	} 
+	.flex-item{
+         width: 75px;
+         height: 75px;
+         background-color: lightskyblue;
+         border: 2px solid darkblue;
+         text-align: center;
+         color: white;
+              }	
+			  
+      .container{
+         display: block;
+		 flex-wrap: wrap;
+         }	
+      .con{
+          display: flex;
+          flex-direction: column-reverse;
+		  align-content: center;
+		  align-items: center;
+         }		  
+    .com{
+          display: flex;
+          flex-direction: row-reverse;
+		  justify-content: center;
+        }
+    .meet{
+        display: flex;
+        align-content :space-around;
+      }	   
+	  .mee{
+	    display: flex;
+	  }
+	  .flex{
+	    flex-grow:3;
+	    flex-flow: column-reverse;
+	    width: 75px;
+        height: 75px;
+        background-color: pink;
+        border: 2px solid red;
+        text-align: center;
+        color: white;
+		}
+	  .
+</style>
+</head>
+   <body>
+    <div class="contain">
+	  <div class="flex-item" >1</div> 
+	  <div class="flex-item">2</div> 
+	  <div class="flex-item">3</div> 
+	  <div class="flex-item">4</div> 
+	</div>
+     <div class="container">
+	  <div class="flex-item" >1</div> 
+	  <div class="flex-item">2</div> 
+	</div>	
+    <div class="con">
+	  <div class="flex-item" >1</div> 
+	  <div class="flex-item">2</div> 
+	</div>
+     <div class="com">
+	  <div class="flex-item" >1</div> 
+	  <div class="flex-item">2</div> 
+	</div>	
+    <div class="meet">
+	  <div class="flex-item" >1</div> 
+	  <div class="flex-item">2</div> 
+	</div>  
+	<div class="mee">
+	  <div class="flex" >1</div> 
+	  <div class="flex">2</div> 
+	  <div class="flex">3</div> 
+	  <div class="flex">4</div> 
+	</div>
+ 	    
+   </body>
+   
+</html>
