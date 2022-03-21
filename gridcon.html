@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <style>
+    *{margin:0; padding: 0;
+    box-sizing: border-box;}
+    main{
+        color:white;
+        display:grid;
+        width: 75%;
+        margin: 50px auto;
+        border: 1px solid blue;
+        grid-template-rows:60px 100px 200px 60px;
+        grid-template-columns: repeat(3,1fr) 100px;
+        grid-gap: 20px;
+        }
+      .one{background-color: red ;
+          grid-column: 1/-1;}  
+      .two{background-color: violet ;}
+      
+      .three{background-color: blue ;}  
+      .four{background-color: orange ;}  
+      .five{background-color: grey ;
+       grid-row: 2/4; grid-column: 4/5;} 
+      .six{background-color: purple; 
+        grid-column: 1/4;}
+      .seven{background-color: pink;
+        grid-column: 1/-1;
+      }
+
+         
+    </style>
+  </head>
+  <body>
+    <h1>layout design</h1>
+       <main>
+         <div class="one">header</div>
+         <div class="two">box2</div>
+         <div class="three">box3</div>
+         <div class="four">box4</div>
+         <div class="five">sidebar</div>
+         <div class="six">artcle</div>
+         <div class="seven">footer</div>
+  </main>
+  </body>
+</html>
