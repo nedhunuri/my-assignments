@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <style>
+           .how{
+               font-size: 25px;
+               animation-duration: 4s;
+               animation-name: slide;
+           }
+           @keyframes slide{
+               from{
+                   margin-left: 100%;
+                   width: 200%;
+                   color: blue
+               }
+               to{
+                   margin-left: 0%;
+                   width: 100%;
+                   color: green;
+
+               }
+           }
+           .are{
+               height: 200px;
+               width: 200px;
+               animation-duration: 5s;
+               animation-name:move;
+               animation-iteration-count: infinite;
+           }
+           @keyframes move{
+               from{
+                   margin-right: 100%;
+                   width: 200%;
+                   
+               }
+               to{
+                   margin-left: 0%;
+                   width: 50%;
+                   
+
+               }
+           }
+           .then{
+               height: 200px;
+               width: 200px;
+               animation-duration: 6s;
+               animation-name:run;
+               animation-iteration-count:  20;
+               animation-timing-function: ease-out;
+           }
+           @keyframes run{
+               from{
+                   margin-left: 0%;
+                   width: 50%;
+                   
+               }
+               to{
+                   margin-left: 100%;
+                   width: 60%;
+                   
+
+               }
+           }
+           .be{
+               height: 200px;
+               width: 200px;
+               animation-duration: 12s;
+               animation-name: joker;
+               animation-iteration-count:  20;
+               animation-delay: 1s;
+               animation-direction: reverse;
+               animation-timing-function: ease-in;
+           }
+           @keyframes joker{
+               from{
+                   margin-left: 0%;
+                   width: 50%;
+                   
+               }
+               to{
+                   margin-left: 100%;
+                   width: 60%;
+                   
+
+               }
+           }
+           .have{
+               height:400px;
+               width: 400px;
+               animation-duration: 12s;
+               animation-name: doll;
+               animation-iteration-count:  5;
+               animation-delay: 2s;
+               animation-direction: alternate;
+               animation-timing-function: ease;
+           }
+           @keyframes doll{
+               from{
+                   transform:rotate(0deg) scale(1);
+                   
+               }
+               to{
+                transform:rotate(360deg) scale(0.5);
+
+               }
+           }
+           h1{
+               height: 100px;
+               width:300px;
+               background-color: brown;
+               border: 1px solid blue;
+               animation: shortand 5s linear 2s infinite alternate;
+           }
+           
+           @keyframes shortand{
+               0%{
+                   transform:rotate(20deg) scale(0.4);
+               }
+              100%{
+                   transform:rotate(360deg) scale(2);
+               }
+           }
+        </style>
+    </head>
+    <body>
+        <p class="how">
+            CSS animations make it possible to animate transitions from one CSS 
+            style configuration to another.
+        </p>
+        <div>
+        <img class="are" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZUKpzP_Em3AX0V1ku38vPF3HKCOeW-5rHOw&usqp=CAU"/><br><br>
+       </div>
+        <img class="then" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpGEWx0FFY8IO1tltFTxEGLtricQSeeGs8JQ&usqp=CAU"/><br><br>
+        <img class="be" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9cYEXbUpL_CvYEPuSjn8DA_1KiAgfSN6eUQ&usqp=CAU"/><br><br>
+        <img class="have" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgrsypF5yG_QOh2AZeOADHY27zguJUTPjW1w&usqp=CAU"/><br><br>
+        <h1>SHORTHAND</h1>
+    </body>
+</html>

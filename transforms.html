@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <style>
+            *{
+                text-align:center;
+                align-items: center;
+                justify-content: center;
+            }
+        h3{
+            border: 2px solid red;
+            background: cyan;
+            border-radius: 25px;
+            width: 200px;
+            height: 100px;
+            transform: translate(50px,30px);
+        }
+        h4{
+          border: 1px solid blue;
+          width: 300px;
+          height: 300px;
+          transform: rotate(30deg);
+          background-color: aqua;
+        }
+        h5{
+            border: 1px dotted purple;
+            background-color: brown;
+            border-radius: 10px;
+            transform: scale(2,3);
+            width: 100px;
+            height: 100px;
+        }
+        h6{
+            background-color: blue;
+            color:aliceblue;
+            border: 2px solid red;
+            width: 200px;
+            height: 100px;
+            transform: scaleX(4);
+        }
+        h2{
+            border: 2px dashed purple;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            transform:scaleX(0.5);
+        }
+        .me{
+            border: 1px inset indigo;
+            width: 100px;
+            height: 100px;
+            transform: scaleY(2);
+        }
+        .me:hover{
+            border: 2px dotted red;
+        }
+        .clock{
+           border: 2px inset aliceblue;
+           border-radius: 20px;
+           width: 100px;
+           transform: skew(30deg, 20deg);
+           background-color: brown;
+           
+        }
+        .divide{
+            border: 1px solid red;
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+          .divide>.divide1{
+            transform: matrix(0.5, -0.3, 0, 1, 0, 0);
+            border: 1px solid red;
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+
+          }
+          
+          .divide>.divide2{
+            transform: matrix(0.3, 1, -0.4, 1, 0.7, 0);
+            border: 1px solid red;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+          }
+          .source{
+              width: 300px;
+              height: 100px;
+              
+          }
+          .source:hover{
+              transform: rotateX(180deg);
+              
+          }
+          .work{
+              width: 300px;
+              height: 400px;
+          }
+          .work:hover{
+             transform:rotateY(200deg);
+          }
+          .dance{
+              width: 300px;
+              height: 400px;
+          }
+          .dance:hover{
+            transform:rotateZ(200deg);
+          }
+          .with{
+            width: 300px;
+              height: 400px;
+          }
+          .with:hover{
+            transform:rotateX(200deg);
+          }
+          
+        </style>
+    </head>
+      <body>
+        <div>
+            <h3>CSS transforms allow you to move, rotate, scale, and skew elements.</h3>
+            <br><br>
+            <h4>The translate() method moves an element from its current position 
+                (according to the parameters given for the X-axis and the Y-axis).The rotate() method rotates an element 
+                clockwise or counter-clockwise according to a given degree.</h4><br><br>
+            <h5>Using negative values will rotate the element counter-clockwise.</h5>  <br><br><br><br>
+            <h6>The scaleX() method increases or decreases the width of an element.</h6>  <br><br>
+            <h2>The scaleX() method increases or decreases the width of an element.</h2><br><br>
+            <p class="me">The scaleY() method increases or decreases the height of an element.</p><br><br>
+            <div>
+             <p>The skew() method skews an element along the X and Y-axis</p>
+            <p class="clock" >The skew() method skews an element along the X and Y-axis</p>
+           </div>
+           <div class="divide">
+               <div>ITS NORMAL</div>
+               <div class="divide1">CHANGE IN THE TRANSITION</div>
+               <div class="divide2">CHANGE IN THE TRANSITION</div>
+
+           </div>
+        </div> 
+        <main>
+            <h1>3D TRANSFORMS</h1>
+            <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGaTIVSiyXsCq4Ikk5rkSggvoSzYJGVKYmlA&usqp=CAU"/>
+            <img  class="source" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGaTIVSiyXsCq4Ikk5rkSggvoSzYJGVKYmlA&usqp=CAU"/>
+            <div>
+                <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmhF-JNukd4cjalJGj3kXiuPPwqIgfERAjLA&usqp=CAU"/>
+                <img class="work" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmhF-JNukd4cjalJGj3kXiuPPwqIgfERAjLA&usqp=CAU"/>
+            </div>
+             <div>
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSeH3V6nGhCr6n6J_F8usqd0c1JluDqZx-fg&usqp=CAU"/>
+                 <img class="dance" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSeH3V6nGhCr6n6J_F8usqd0c1JluDqZx-fg&usqp=CAU"/>
+             </div>
+             <div>
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa6398bRs_AM2YixbpHc-0O5yy3Az00ve6mw&usqp=CAU"/>
+                 <img class="with" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa6398bRs_AM2YixbpHc-0O5yy3Az00ve6mw&usqp=CAU"/>
+             </div>
+        </main>
+            
+      </body>
+</html>

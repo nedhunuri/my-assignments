@@ -1,0 +1,85 @@
+<html>
+<head>
+     <style>
+         body{
+             height:50hv;
+             overflow: scroll;
+         }
+         .box{
+             display: inline-block;
+             width: 100px;
+             height: 100px;
+             background-color: purple;
+             color: white;
+             
+         }
+         #two{
+             position: relative;
+             top: 20px;
+             bottom: 20px;
+         }
+         span{
+             background-color: blue;
+
+         }
+         .positioned{
+            position: absolute;
+          background: yellow;
+            bottom: 10px;
+           left: 10px;
+        
+        }
+
+         .box1{
+            width: 100px;
+            height: 100px;
+            background: red;
+             color: white;
+         }
+         #one{
+             position:fixed;
+             bottom: 300px;
+             left: 10px;
+             background: blue;
+         }
+         .outer{
+            width: 500px;
+          height: 300px;
+        overflow: scroll;
+        padding-left: 150px;
+         }
+     </style>
+</head>
+<body>
+   <div class="box" id="one">one</div>
+   <div class="box" id="two">one</div>
+   <div class="box" id="three">one</div>
+   <div class="box" id="four">one</div><br><br>
+   <h1>ABSOLUTE POSITIONING</h1>
+   <p>Elements that are relatively positioned remain in the normal flow of the document</p>
+   <p  class="positioned">In contrast, an element that is absolutely positioned is taken out of the flow; thus, other elements are positioned as if it did not exist. The absolutely positioned element is 
+       positioned relative to its nearest positioned ancestor (i.e., the nearest ancestor that is not static).</p>
+   <p>The absolutely positioned element is positioned
+            relative to its nearest positioned ancestor (i.e., the nearest ancestor that is not static)</p>
+    <p>inline elements <span>like this one</span> and <span>this one</span> sit on the same line as one another, and adjacent text nodes, if there is space on the same line. Overflowing inline elements <span>wrap onto a new line if possible — like this 
+                one containing text</span>, or just go on to a new line if not, much like this image will do: <img src="./img4.jpg"></p>
+   <p>This can be used to create a "floating" element that
+        stays in the same position regardless of scrolling.
+        In the example below, box "One" is fixed at 80 pixels from the top of the page and 10 pixels from the left.
+         Even after scrolling, it remains in the same place relative to the viewport.This can be used to create a "floating"
+          element that stays in the same position regardless of scrolling. In the example below, box "One" is fixed at 80 pixels
+           from the top of the page and 10 pixels from the left.
+          Even after scrolling, it remains in the same place relative to the viewport.</p>
+      <div class="outer">
+          <p>Fixed positioning is similar to absolute positioning, 
+              with the exception that the element's containing block is the initial
+               containing block established by the viewport, unless any ancestor has transform, perspective, or 
+               filter property set to something other than none (see CSS Transforms Spec), which then causes that ancestor
+                to take the place of the elements containing block. This can be used to create a "floating" element that stays 
+                in the same position regardless of scrolling. In the example below, box "One" is fixed at 80 pixels from the top
+                 of the page and 
+              10 pixels from the left. Even after scrolling, it remains in the same place relative to the viewport.</p>
+              <div class="box1" id="one">one </div>
+      </div> 
+</body>
+</html>

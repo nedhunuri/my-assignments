@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <style>
+           #grad1{
+            
+               text-align: center;
+               height: 200px;
+               background-image: radial-gradient(red 5%, yellow 10%, green 10%) ;
+           }
+           #grad2{
+            height: 200px;
+            background-image: linear-gradient(to right, red , yellow);
+            }
+            #grad3{
+            height: 200px;
+            text-align: center;
+            background-image: radial-gradient(farthest-corner at 30% 55%, red, yellow, black);
+            }
+            #grad4{
+                text-align: center;
+            height: 200px;
+            background-image: linear-gradient(to right, red,orange,green,blue,indigo,violet);
+            }
+            #grad5{ 
+                text-align: center;
+            height: 200px;
+            background-image: repeating-linear-gradient(purple, pink 10%, blue 20%);
+            opacity: 0.9;
+            }
+            #grad6{
+                 background-color:rgb(0,0,255);
+                 opacity:0.6;
+            }
+            .color1{
+            background-color:hsla(120,100%,50%,0.3);
+            }
+            .color2{
+            background-color: rgb(100%, 20%, 0%);
+            }
+            .color3{
+                background-color: rgb(0%, 120%, 0%);
+            }
+            .color4{
+                background-color: rgb(0%, 0%, 200%);
+            }
+            .color5{
+               background-color: hsl(120, 60%, 50%);
+            }
+            p{
+                background-image: linear-gradient(to left, rgba(225,0,0,0), rgba(250,0,0,1)) ;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="grad1">
+            <h1> linear gradient starts red at the top,
+                 transitioning to yellow at the bottom:</h1>
+        </div>
+        
+        <div id="grad2">
+            <h1>//Direction -  to Right.//linear gradient//</h1>
+        </div>
+        <div id="grad3">
+            <h1>//Direction - farthest farthest-corner//</h1>
+        </div>
+        <div id="grad4">
+            <h1>//Direction - to Right with multiple colors//</h1>
+        </div>
+        <div id="grad5">
+            <h1>//repeating linear gradient//</h1>
+        </div>
+        <div id="grad6">
+            <h1>background color using opacity</h1>
+        </div>
+         <h2 class="color1">hue saturation lightness</h2>
+         <h3 class="color2">hue saturation lightness</h3>
+         <h4 class="color3">hue saturation lightness</h4>
+         <h5 class="color4">hue saturation lightness</h5>
+         <h6 class="color5">hue saturation lightness</h6>
+         <p>CSS gradients also support transparency, which can be used to create fading effects.</p>
+    </body>
+</html>
