@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+      .container{
+        display:flex;
+        border:1px solid red;
+        height:600px;
+
+      }
+      .head{
+        flex:1;
+        border-right:1px solid red;
+      }
+      .heads{
+        flex:1;
+       }
+    </style>
+    </head>
+    <body>
+      <div class="container-fluid">
+        <h1>GLYPhICONS</h1>
+        <form method="post" id="contactform" action="" role="form">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <label for="contactname"></label>
+              <input type="text" class="form-control" id="contactname" placeholder="enter name">
+
+            </div>
+            <div class="input-group">
+                <label for="contactemail"></label>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                <input type="email" class="form-control" id="contactmail" placeholder="enter mail">
+              </div>
+              <div class="input-group">
+                <label for="password">< /label>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-eye-close"></i></span>
+                <input type="email" class="form-control" id="contactmail" placeholder="enter password">
+              </div>
+              <div class="input-group">
+                <label for="contactsubject"></label>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-text-size"></i></span>
+                <input type="text" class="form-control" id="contactsubject" placeholder="enter subject">
+              </div>
+              <div class="input-group">
+                <label for="textarea"></label>
+                <span class="glyphicon glyphicon-comment"></span>
+                <textarea class="form-control" id="contactsubject" placeholder="enter text" rows="10" cols="10"></textarea>
+              </div>
+            </div>
+        </form>
+        <div class="container">
+          <div class="head">
+            <form>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+                <label for="address"></label>
+                <input type="text" class="form-control" id="address" placeholder="add address">
+  
+              </div><br><br>
+              <div class="input-group">
+                  <label for="phonenumber"></label>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                  <input type="telephone" class="form-control" id="telephone" placeholder="enter number">
+                </div><br><br>
+                <div class="input-group">
+                  <label for="phonenumber"></label>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
+                  <input type="telephone" class="form-control" id="telephone" placeholder="enter alt number">
+                </div><br><br>
+                <div class="input-group">
+                  <label for="photo"></label>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                  <input type="text" class="form-control" id="pp" placeholder="passport">
+                </div><br><br>
+                <div class="input-group">
+                  <label for="dob"></label>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                  <input type="text" class="form-control" id="pp" placeholder="date of birth">
+                </div><br><br>
+                <div class="input-group">
+                  <label for="checkin"></label>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-plane"></i></span>
+                  <input type="text" class="form-control" id="pp" placeholder="travel">
+                </div><br><br>
+                <div class="input-group">
+                  <label for="myfile">Select a file:</label>
+                  <span><i class="glyphicon glyphicon-file"></i></span>
+                  <input type="file" id="myfile" name="myfile">
+                  <input type="submit">
+                </div><br>
+                <div class="input-group">
+                  <label for="checkin"></label>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                  <input type="number" class="form-control" id="pp" placeholder="checkin time">
+                </div><br><br>
+                
+            </form>
+          </div>
+          <div  class="heads">
+            <form>
+              <div class="input-group">
+                <label for="name"></label>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input type="text" class="form-control" id="name" placeholder="nedhunuri vishwadha">
+              </div><br><br>
+              <div class="input-group">
+                <label for="help center"></label>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-headphones"></i></span>
+                <input type="text" class="form-control" id="pp" placeholder="help center">
+              </div><br><br>
+              <div class="input-group">
+                <label for="rate meesho"></label>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-heart-empty"></i></span>
+                <input type="text" class="form-control" id="pp" placeholder="rate meesho">
+              </div><br><br>
+              <div class="input-group">
+                <label for="credit card"></label>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
+                <input type="number" class="form-control" id="pp" placeholder="credit card details">
+                </div><br><br>
+                <div class="input-group">
+                  <label for="credit card"></label>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok"></i></span>
+                  <br><br>
+                  <input type="checkbox" name="highschool" value="highschool">highschool(10th)<br>
+                 <input type="checkbox" name="highschool" value="highschool">highschool(12th)<br>
+                   <input type="checkbox" name="graduation" value="graduation">graduation<br>
+                  </div>
+            </form>
+          </div>
+
+        </div>
+    </body>
+     
+</html>

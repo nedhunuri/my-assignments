@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
+    </head>
+    <style>
+       
+    </style>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Jjr58CYBhk9jOz-HkysG4Yp8kUDwKKDEBw&usqp=CAU" class="img-responsive" style="width:30px;"></a>
+                </div> 
+                    <div class="collapse navbar-collapse"  id="menu">
+                       <ul class="nav navbar-nav">
+                          <li class="active"><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="welcome to home!">HOME</a></li>
+                          <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">ALL COURSES<SPAN class="caret"></SPAN></a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">FRONT END COURSES</a></li>
+                                <li><a href="#">back END COURSES</a></li>
+                                <li><a href="#">FULL STACK COURSES</a></li>
+                            </ul>
+                         </li>
+                            <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="we palce you">PLACEMENTS</a></li>
+                            <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="we provide INTERNSHIPS">INTERNSHIPS</a></li>
+                            <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="review">REVIEWS</a></li>
+                            <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="view about us">ABOUT US</a></li>
+                            <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="contact us">CONTACT</a></li>
+                      </ul>  
+                
+                    <form class="navbar-form navbar-left" action="">
+                        <div class="form-group">
+                           <input type="text" class="form-control" placeholder="SEARCH" name="SEARCH">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm">SUBMIT</button>
+                    </form>
+             
+                 <ul class="nav navbar-nav navbar-right ">
+                      <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="sign up please"><span class="glyphicon glyphicon-user">SIGN IN</span></a></li>
+                      <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="contact"><span class="glyphicon glyphicon-log-in">LOG-IN</span></a></li>
+                 </ul>
+            
+             </div>
+          </div> 
+     </nav>
+            <div class="container">
+                <h1>FORM USING BOOTSTRAP</h1>
+                <form>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <label for="contactname"></label>
+                        <input type="text" class="form-control" id="contactname" placeholder="enter name">
+          
+                      </div><br>
+                      <div class="input-group">
+                          <label for="contactmail"></label>
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                          <input type="email" class="form-control" id="contactmail" placeholder="enter mail">
+                        </div><br>
+                        
+                        <div class="input-group">
+                          <label for="password">  </label>
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-eye-close"></i></span>
+                          <input type="email" class="form-control" id="contactmail" placeholder="enter password">
+                        </div><br>
+                        <div class="input-group"> 
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> 
+                            <input type="date" class="form-control"/>  
+                         </div><br>  
+                         <div class="input-group">  
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-upload"></i></span>  
+                            <input type="file" class="form-control" /> 
+                            
+                         </div> <br>
+                         <div class="input-group">  
+                            <input type="text" class="form-control" placeholder="Contact Number" maxlength="10" min="10" />  
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>  
+                         </div><br>
+                         <div class="input-group">  
+                            <span class="input-group-addon"><a href="#"><i class="glyphicon glyphicon-fast-backward"></i></a></span> 
+                            <input type="text" class="form-control"/>  
+                            <span class="input-group-addon"><a href="#"><span class="glyphicon glyphicon-fast-forward"></span></a></span>  
+                         </div>  
+                      <br />   
+                        <div class="input-group">
+                            <label for="contactsubject"></label>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-text-size"></i></span>
+                            <input type="text" class="form-control" id="contactsubject" placeholder="enter subject">
+                          </div><br>
+                          <h3>INTERESTS</h3>
+                        <div class="form-check input-group">
+                            <input type="checkbox" class="form-check-input" id="browsing" name="browse" checked>
+                            <label for="browse">badminton</label>
+                        </div> 
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="skating" name="browse">
+                            <label class="form-check-label" for="browse">bicycle</label>
+                        </div> 
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="swimming" name="browse">
+                            <label class="form-check-label" for="browse">running</label>
+                        </div> 
+                        <h3>choose subjects</h3>
+                        <div class="dropdown">
+                         <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownmenu" data-toggle="dropdown">
+                             <span class="caret"></span>
+                         </button>
+                         <ul class="dropdown-menu" arial-label="dropdownmenu">
+                           <li><a href="#">MATHEMATICS</a></li>
+                            <li><a href="#">social</a></li>
+                            <li><a href="#">science</a></li>
+                        </ul>
+                        </div><br>
+                       <div class="form-check form-switch">
+                           <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes">
+                           <lable class="form-check-label" for="mySwitch">ARE YOU INTERESTED IN PLAYING GAMES</lable>
+
+                       </div>
+                       <button type="submit" class="btn btn-success">submit</button><br>
+                       <div><br>
+                        <label for="customRange" class="form-label">RATING FOR SERVICE</label>
+                        <input type="range" class="form-range" id="customRange">
+                       </div><br><br>
+                       <div>
+                           <label for="myColor" class="form-label">CHOOSE YOUR FAVOURITE COLOR</label>
+                           <input type="color" class=" form-control-color" id="myColor" value="red">
+                       </div><br>
+                       <h3>CHOOSE FAVOURITE PLACES</h3>
+                       <div class="form-check input-group">
+                        <input type="radio" class="form-check-input" id="place" name="browse" checked>
+                        <label for="place">lucknow</label>
+                    </div> 
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="skating" name="goa">
+                        <label class="form-check-label" for="glyphicon-heart-empty">goa</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="swimming" name="sikkim">
+                        <label class="form-check-label" for="sikkim">sikkim</label>
+                    </div><br> 
+
+                    <button type="Submit" class="btn btn-success">  
+                        <span class="glyphicon glyphicon-cloud-upload"> Upload</span></button>  
+                           <button type="reset" class="btn btn-danger">  
+                           <span class="glyphicon glyphicon-edit"> Edit</span></button>  
+                           
+                </form>
+                
+            </div>
+    </body>
+</html>

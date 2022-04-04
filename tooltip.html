@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+    </head>
+    <style>
+    .jumbotron{
+        background-color:aqua;
+    }
+</style>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">jumbotron-style</h1>
+                  <p class="lead"> A jumbotron indicates a big box for calling extra attention to some special content or information. </p>
+                 <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+         <a class="btn btn-success btn-lg" href="#" role="button">Learn more</a>
+            </div>
+        </div><br><br>
+    <div class="container">
+        <h1>tooltip positioning</h1>
+        <div>
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKDeaLVb6ptSuqQgeXLCBhMoEfI_f1LJWcKQ&usqp=CAU" target="_blank"  data-bs-toggle="tooltip" data-bs-placement="top" title="cute dog">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKDeaLVb6ptSuqQgeXLCBhMoEfI_f1LJWcKQ&usqp=CAU" alt="..." class="img-thumbnail" style="height:300px">
+            </a>
+        </div><br>
+        <div>
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Pj-yC01kbMz4nevQXBTLMbT-OGLh1IB7Fw&usqp=CAU" target="_blank"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="balck and white pictures">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Pj-yC01kbMz4nevQXBTLMbT-OGLh1IB7Fw&usqp=CAU" alt="..." class="img-thumbnail" style="height:300px">
+                </a>
+        </div><br>
+        <div>
+         <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwJMWUIQWFTq3WIPFVgq8YAkeonjs3II3ksA&usqp=CAU" target="_blank"  data-bs-toggle="tooltip" data-bs-placement="left" title="lil cute dolls ">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwJMWUIQWFTq3WIPFVgq8YAkeonjs3II3ksA&usqp=CAU" alt="..." class="img-thumbnail" style="height:300px">
+        </a>
+        </div><br>
+         <div>
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1CuioSqJVNiIvo4hl7phwv0ql615rvHnxaQ&usqp=CAU" target="_blank"  data-bs-toggle="tooltip" data-bs-placement="right" title="two girls are playing">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1CuioSqJVNiIvo4hl7phwv0ql615rvHnxaQ&usqp=CAU" alt="..." class="img-thumbnail" style="height:300px">
+            </a>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+  $('[data-bs-toggle="tooltip"]').tooltip();
+      });
+    
+
+        </script>
+        
+    </body>
+</html>
+
