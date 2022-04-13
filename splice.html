@@ -1,0 +1,49 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+          //shift unshift//
+          const values=["fix","value","method","math","open"];
+          values.shift();
+          console.log(values);
+          values.unshift("string");
+          console.log(values);
+          let array=[23,34,45,56,76,78,89,90,12,32];
+          array.splice(1,4,"five","six");
+          console.log(array);
+          const fruit=["apple","mango","orange","lemon","pear"];
+          const citrus=fruit.slice(1,2);
+          console.log(citrus);
+          //concat//
+          let first=[12,23,43];
+          let second=[12,56,78];
+          let final=first.concat(second);
+          console.log(final);
+        //join//
+        let name=["john","mart","rosy","stalin"];
+        console.log(name.join("-"));
+        name.reverse();
+        console.log(name);
+        //fill//
+        let give=Array(7);
+        give.fill("string");
+        console.log(give);
+        //custom array methods//
+        Array.prototype.myUcase=function(){
+            for(i=0;i<this.length;i++){
+                this[i]=this[i].toUpperCase();
+            }
+        };
+        const place=["goa","bengal","mysore"];
+        place.myUcase();
+        console.log(place);
+       //peak element//
+       var myArr=[2,1,4,6,7];
+       myArr.sort();
+       var len=myArr.length;
+       console.log(myArr[len-1]);
+        </script>
+    </body>
+</html>

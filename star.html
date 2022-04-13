@@ -1,0 +1,83 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var i,j;
+            for(i=1;i<=5;i++){
+              for(j=1;j<=i;j++){
+                  document.write("* ");
+              }
+              document.write("<br/>");
+            }
+            var i ,j;
+            for(i=5;i>=1;i--){ 
+                for(j=1;j<=i;j++){
+                    document.write("A ");
+                }
+                document.write("<br/>")
+            }
+           var i,j;
+           for(i=1;i<=5;i++) {
+               for(j=1;j<=i;j++){
+                   document.write(j);
+               }
+               document.write("<br/>");
+           } 
+           var rows=9;
+           for(var i=1;i<=rows;i++){
+               for(var k=1;k<=(rows-i); k++){
+                   document.write("&nbsp;");
+               }
+               for(var j=1;j<=i;j++){
+                   document.write("* ");
+               }
+               document.write("<br/>")
+           }
+           var rows=9;
+           for(var i=rows;i>=1;i--){
+               for(var k=1;k<=(rows-i); k++){
+                   document.write("&nbsp;");
+               }
+               for(var j=1;j<=i;j++){
+                   document.write("* ");
+               }
+               document.write("<br/>")
+           }
+           var rows=5;
+           for(var i=1;i<=rows;i++){
+               for(var k=1;k<=(rows-i); k++){
+                   document.write("&nbsp;");
+               }
+               for(var j=1;j<=i;j++){
+                   document.write(" ",j," ");
+               }
+               document.write("<br/>")
+           }
+          
+           for(var i=1;i<=5;i++){
+               for(var j=1;j<=5;j++){
+                   document.write(" " ,i," ");
+                   
+               }
+               document.write("<br/>");
+           }
+           for(var i=1;i<=5;i++){
+               for(var j=1;j<=5;j++){
+                   document.write("* ");
+                   
+               }
+               document.write("<br/>");
+           }
+           for(var i=1;i<=5;i++){
+               for(var j=1;j<=5;j++){
+                   document.write(" ",j, " ");
+                   
+               }
+               document.write("<br/>");
+           }
+          
+        </script>
+    </body>
+</html>

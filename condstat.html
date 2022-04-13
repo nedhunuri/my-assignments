@@ -1,0 +1,118 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+       <h1>conditional statments</h1>
+       <script>
+           //if statement//
+           const age=20;
+           if(age>=18){
+               console.log("THIS BOY IS AN ADULT");
+           }
+           else{
+               console.log("this boy is not adult");
+           }
+           const b=30;
+           if(b<20){
+               console.log("true");
+           }
+            else{
+                console.log("false");
+            }
+            //if-else statement//
+           var a=30;
+           if(a==20){
+               console.log("a is equal to 20");
+           }
+           else if(a==5){
+               console.log("a is equal to 5");
+           }
+           else if(a==30){
+               console.log("a is equal to 30");
+           }
+           else{
+               console.log("a is not equal to 20,5,30");
+           }
+           var a=50;
+           if(a==20){
+               console.log("a is equal to 20");
+           }
+           else if(a==5){
+               console.log("a is equal to 5");
+           }
+           else if(a==30){
+               console.log("a is equal to 30");
+           }
+           else{
+               console.log("a is not equal to 20,5,30");
+           }
+           //task on else-if//
+         var marks=50;
+          if(marks>70){
+              console.log("A GRADE");
+          }
+          else if(marks<70,  marks>60){
+              console.log(" B GRADE");
+          }
+          else if(marks<60,  marks>50){
+              console.log(" C GRADE");
+          }
+          else if(marks<50,  marks>40){
+              console.log(" D GRADE");
+          }
+          else{
+              console.log("FAIL")
+          }
+          //popups//
+          //prompt in js//
+          var marks,output;
+          marks=prompt("enter yor marks");
+          if(marks>85){
+            output="well done";
+            console.log(output);
+          }
+          else{
+              console.log("better luck next time");
+          }
+          //confirm in js//
+          let deletePost = confirm("do you really want to delete this post");
+          if(deletePost){
+              console.log("your post has been deleted successfully");
+          }
+          else{
+              console.log("your post has been not deleted  successfully");
+          }
+          console.log(deletePost);
+          //alert box//
+          var bee=29;
+          if(bee>10){
+              alert(bee);
+          }
+          else{
+              alert("you have entered wrong number");
+          }
+          //differences of var ,let and const//
+          //var//
+          var greet="good morning";
+          var greet="how are you all";
+          console.log(greet);//output is shown as "how are you all" ifgnoring the  "good morning". this might cause changes i result.so, to overcome this let and const keywords are used.//
+          let x=6;
+          let y=6;//here cant give same variable x but can change the value ....error:Identifier 'x' has already been declared //
+          console.log(x);
+          //const//
+           const pi=3.14;
+            const s=4;// if pi value is changed to some other value ... then it returns the error:Identifier 'pi' has already been declared.because the pi value remains constant //
+            console.log(pi);
+            //prac//
+            var  price=400;
+            var money=100;
+            if(price>money){
+                console.log("not enough");
+            }
+            else{
+                console.log("can buy");
+            }
+       </script>
+    </body>
+</html>

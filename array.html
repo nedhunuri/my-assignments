@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var animals=["lion","crow","cat","rat","bat"];
+           for(let i=0;i<animals.length;i++){
+               console.log(animals[i]);
+           }
+           console.log(animals.join("*"));
+           console.log( animals[1]);
+           console.log(animals.includes("crow"));
+            let array1=[1,0,6,2];
+            let array2=[5,9,0,8];
+            array1.push(...array2);
+            console.log(array1);
+            array1.pop(...array2);
+            console.log(array1);
+            array1.sort();
+            console.log(array1);
+            
+            //shift and unshift//
+            let array=[12,32,45];
+            array.shift();
+            console.log(array);
+            array.unshift(3456)
+            console.log(array);
+            array.splice(0,1);
+            console.log(array);
+             console.log(array.reverse());
+            //sorting alphabets//
+            var time=["a", "d", "c","v" ,"c" ,"b"];
+            console.log(time.sort());
+            
+        </script>
+    </body>
+</html>
