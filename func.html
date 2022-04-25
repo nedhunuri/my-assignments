@@ -1,0 +1,114 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <p>finding the largest numbers:(4,50,6)</p>
+        <p id="hight"></p>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <script>
+            //func declaration//using the function keyword//
+            function declare(para1,para2){
+                return para1+para2;
+            }
+            var result=declare(8,9);
+            console.log('sum=',result);
+            //func expression//function assigning to the varaiable.there will be no function name used//
+            var dec=function(para3,para4){
+                return para3+para4;
+            }
+            var res=dec(9,7);
+            console.log("sum=",res);
+            //functions with parameters//
+            function highest(var1,var2,var3){
+                if(var1>var2){
+                  if(var1>var3){
+                      return var1;
+                  }
+                  else{
+                      return var3;
+                  }
+                }
+                else{
+                    if(var2>var3){
+                        return var2;
+                    }
+                    else{
+                        return var3;
+                    }
+                }
+            }
+           document.getElementById("hight").innerHTML=highest(4,50,6);
+           // The default parameters is used to initialized the named parameters with default values in case of when no value or undefined is passed.//
+           function def(num1,num2=2){
+               return num1*num2;
+           }
+           document.getElementById("p1").innerHTML=def(4);
+           //class example//
+           function calculateDiscount(courseFee,discount=10){
+               let finalAmount=courseFee-(courseFee*discount/100);
+               console.log(finalAmount);
+           }
+           calculateDiscount(20000);
+           //function without parameters
+           //function <name>(){statements; output statement; }//
+            //variable declaration//
+            var side=50;
+            //func dec//
+            function area_of_square(){
+                var area=side*side;
+                console.log("area of the square="+" "+ area);
+            }
+            area_of_square();
+            //function with return statement//
+           var res=fun(12,30);
+           function fun(x,y){
+               return x*y;
+           }
+           document.write(res);
+           //interrupting a function using the return statement.//
+           var t=sec();
+           function sec(){
+               var i=1;
+               while(i){
+                   document.write(i+"<br>");
+                   if(i==4){
+                       return;
+                   }
+                   document.write(i+"<br>");
+                   i++;
+               }
+               document.write("hello 10000 coders");
+           }
+             //recursive function//calls itself//A recursive function must have a condition to stop calling itself. Otherwise, the function is called indefinitely.//Once the condition is met, the function stops calling itself. This is called a base condition.//
+             //Recursion is a common mathematical and programming concept. This has the benefit of meaning that you can loop through data to reach a result.//
+          // program to find the factorial of a number
+          function factorial(x) {
+          if (x === 0) {
+           return 1;
+         }
+           else {
+            return x * factorial(x - 1);
+             }
+        }
+         const num = 3;
+        if (num > 0) {
+        let result = factorial(num);
+         console.log(`The factorial of ${num} is ${result}`);
+         }
+         //Self-invoking functions in JavaScript are the anonymous self-executing functions that are called after their definition. These JavaScript functions can run immediately when followed by the parentheses set ().//
+         (function(){
+    console.log("This function is called immediately");
+      })();
+      //nested functions//
+      function outer(c){
+          var w=function inner(d){
+              return c*d;
+          }
+          return w;
+      };
+      var outvar=outer(2);
+      console.log(outvar(4));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+    <head>
+     <style>
+         .dcode {
+         width:250px;
+         height:100px;
+         background:blue;
+         }
+     </style>
+    </head>
+    <body>
+        <p id="p1"></p>
+        <p class="myclass">my class</p>
+       <h2>hello </h2>
+       <h3 class="intro">hello world</h3>
+      
+        <p class="blue">first element</p>
+        <p class="blue">first element</p>
+        <input type="button" id="btnClick" value="click me!!">
+        <script>
+            //easiest way to find an HTML element in the DOM, is by using the element id.//
+         document.getElementById("p1").innerHTML="hello students";
+         //create element//
+         let body=document.body;
+         let div=document.createElement("div");
+         div.innerText="hello world";
+         body.append(div);
+         //class name//
+          var e=document.querySelector("myclass");
+          console.log(e);
+          //append//
+          let newElement=document.createElement("input");
+          document.body.appendChild(newElement);
+          //set//
+          const myElement=document.createElement("div");
+          myElement.setAttribute("class" ,"dcode");
+          document.body.appendChild(myElement);
+          console.log(myElement);
+           
+            //class name//
+             const elements=document.getElementsByClassName("blue");
+             console.log(elements);
+             //color change//
+          document.getElementById("btnClick").addEventListener("click",clicked);
+          function clicked()
+          {
+              alert("click here please");
+          }
+            
+            </script>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>objects</h1>
+        <script>
+           const ticket={
+               to:"karimnagar",
+               from:"hyderabad",
+               time:9,
+               name: "john",
+               final:function(){
+                   return this.time+ "  "+ this.name;
+               }
+           }
+           console.log(ticket.final());
+           console.log(ticket.to);
+           console.log(ticket.from);
+           //creation//
+           const product={
+               name: "lakme vitamin c",
+               price:200,
+               usage:"overnight"
+           }
+           console.log(product.name + " is "+ product.price +" used "+product.usage);
+           //mutable//Any changes to a copy of an object will also change the original object://
+            const fruit={
+                name:"apple",
+                color:"red",
+                climate:"monsoon",
+                tag:"fresh apples"
+            }
+            const x=fruit;
+            x.climate="rainy";
+            console.log(fruit.tag+ " is harvested in " + fruit.climate);
+            //adding prop//
+            const place={
+                dest:"lucknow",
+                final:"goa",
+                miss:"punjab"
+            }
+            place.match="pune";
+            console.log(place.dest+" through " + place.match);
+            //delete prop//
+            const movie={
+                pic:"matrix",
+                by:"renaldo",
+                act:"jessy",
+                actre: function(){
+                   return this.pic+" "+ this.by;
+                }
+             };
+             console.log(movie.actre());
+             delete movie.by;
+             console.log(movie.pic+"  done by "+ movie.by);
+             //class//
+             let userData={
+                 firstName:"mr",
+                 lastName:"sharma",
+                 address:"bangalore", 
+                 prime:true,
+                 productList:[],
+                 addToCart:function(product){
+                     this.productList.push(product);
+                 },
+                 productsPurchased:function(){
+                     return this.productList.length;
+                 }
+             };
+             console.log(userData.address);
+             console.log(userData["address"]);
+
+             userData.addToCart("iphone-max");
+             userData.addToCart("oneplus");
+             console.log(userData);
+             console.log(userData.productsPurchased());
+             console.table(userData);
+
+            //nested objects//
+            const obj={
+                name:"john",
+                age:70,
+                sports:{
+                    one:"hockey",
+                    two:"badminton",
+                    three:"cricket"
+                }
+            }
+            console.log(obj);
+            console.log(obj.sports.one);
+            console.log(obj.sports["two"]);
+            console.log(obj["sports"]["three"]);
+        //this keyword//
+        const shop={
+            list1:"milk",
+            list2:"choclates",
+            list3:"fruits",
+            pri:40,
+            prices: function(){
+                return (this.list1+"  "+this.pri).toUpperCase();
+            }
+        }
+         console.log(shop.prices());
+         //using loop-display obj prop//
+         const soft={
+             devops:"fullstack",
+             lang:"html",
+             lang1:"css",
+             lang2:"js"
+         };
+         let txt=" ";
+         for(let x in soft){
+             txt+= soft[x]+  " ";
+         };
+         console.log(txt);
+         //functions//
+         var person={
+             name:"fred",
+             sayname:function(){
+                 console.log(this.name);
+             }
+         };
+         person.sayname();
+         //fullname//
+         const books={
+             author: "rbt",
+             desc:"lost child",
+             rate:5,
+             interest:function(){
+                 return this.author+" "+ this.rate;
+             }
+         }
+            console.log(books.interest());
+        </script>
+    </body>
+</html>

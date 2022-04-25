@@ -1,0 +1,52 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+             const text1="welcome student";
+     function result1(text1){
+         console.log(text1.toUpperCase());
+         console.log(text1.toLowerCase());
+         console.log(text1.length);
+         console.log(text1.indexOf("c"));
+         console.log(text1.indexOf("w"));
+         console.log(text1.indexOf("s"));
+         console.log(text1.indexOf("t"));
+         console.log(text1.indexOf("e"));
+         console.log(text1.indexOf("d"));
+         console.log(text1.lastIndexOf("student"));
+         console.log(text1.replace("welcome student","java will be scripting"));
+         console.log(typeof text1);
+         console.log(text1.repeat(3));
+     }
+     result1(text1);
+     //shift and unshift//
+     const text2=[20,32,45,34,56];
+     function result2(text2){
+         console.log(text2.join("*"));
+         console.log(text2.includes(32));
+         console.log(text2.includes(21));
+       
+     }
+     result2(text2);
+      //numbers//
+      function printNum(){
+          for(var i=1;i<=10;i++){
+              console.log(i);
+          }
+      }
+      printNum();
+      //even numbers//
+      function printEven(arr){
+          for(var i=0;i<arr.length;i++){
+              if(arr[i]%2==0){
+                  console.log(arr[i]);
+              }
+          }
+      }
+      var arr=[13,14,23,12,66,80,67,89,100];
+      printEven(arr);
+        </script>
+    </body>
+</html>    
