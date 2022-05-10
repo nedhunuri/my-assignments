@@ -1,0 +1,53 @@
+<html>
+    <head>
+      <style>
+          body{
+              height: 500vh;
+          }
+          .parent{
+              display:flex;
+              justify-content: center;
+              align-items:center;
+              height:100vh;
+          }
+      </style>
+    </head>
+    <body>
+        <div>
+            <span>height of the webpage</span><P id="height"></P>
+            <span>width of the webpage</span><P id="width"></P>
+        </div>
+        <div class="parent">
+              <p id="rotate">The onscroll event occurs when an element's scrollbar is being scrolled.</p>
+        </div>
+        firstname:<input type="text" onkeydown="myFunction()" >
+        lastname:<input type="text" id="fname" onkeyup="myonFunction()">
+
+        
+       <script>
+         function myFunction(){
+             alert("pressed the username inside the input field");
+         }
+         function myonFunction(){
+             var x=document.getElementById("fname");
+             x.value=x.value.toUpperCase();
+         }
+         //scrolly//
+         document.addEventListener("scroll",function(){
+             rotateTheElement(window.scrollY);
+         })
+          function rotateTheElement(scrollY){
+              let protate=document.getElementById("rotate");
+              protate.style.transform=`rotate(${scrollY}deg)`;
+          }
+
+          window.onresize=function(){
+              let height=document.getElementById("height");
+              let width=document.getElementById("width");
+
+              height.innerText=window.innerHeight;
+              width.innerText=window.innerWidth;
+          }
+        </script>
+    </body>
+</html>
