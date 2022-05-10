@@ -1,0 +1,168 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p>Enter the Number: <input id="num"><button onclick="checkPrime()">Check</button></p>
+        <p id="resPara" style="display:none;">It is <span id="res"></span> Number</p><br><br>
+        <script>
+            //print star//
+            var i,j;
+            for(i=1;i<=5;i++){
+              for(j=1;j<=i;j++){
+                  document.write("* ");
+              }
+              document.write("<br/>");
+            }
+            //palindrome//
+            function palnum(){
+                var rem,temp,final=0;
+                var number=Number(document.getElementById("N").value);
+                temp=number;
+                while(number>0){
+                    rem=number%10;
+                    number=parseInt(number/10);
+                    final=final*10+rem;
+                }
+                if(final==temp){
+                    window.alert("number is palindrome");
+
+                }
+                else{
+                    window.alert("number is not palindrome")
+                }
+            }
+
+
+            //function declaration //used function keyword//
+            function dec(par1,par2){
+                return par1+par2;
+            }
+            var res=dec(5,5);
+            console.log("sum=",res);
+
+
+
+            //function expression//
+            var exp=function(para1,para2){
+                return para1+ para2;
+            }
+            var result=exp(18,90);
+            console.log("add=",result);
+
+
+            //and find the longest word within the string//
+           function find_longest_word(str){
+               str=str.split(" ");
+               return str.sort((a,b)=>b.length-a.length)[0];
+           }
+        console.log(find_longest_word("web development tutorial"));
+
+
+          //gst calculation//
+          function def(amt,gst=18){
+              let overallgst=35*(gst/100);
+              let overallamt=35+overallgst;
+              return overallamt;
+          }
+           console.log(def(35));
+           
+
+       //find the elements in array whcih are less than 30//
+        let returnSmall= (arr, num) => { 
+        return arr.reduce((acc, curr)=>{  
+        if(curr < num){
+        return acc.concat(curr)  // Concatenate the acc with arr
+         }
+        else{
+        return acc
+             }
+         }, [])   // Initialize the accumulator with an empty array
+        }
+  console.log(returnSmall([22,26,24,18,23,30,36,46], 30));
+
+
+      //bmi//
+      let heightMark=1.69;
+      let weightMark=78;
+      let BMIMark=weightMark/(heightMark**2);
+
+      let heightJohn=1.95;
+      let weightJohn=92;
+      let BMIJohn=weightJohn/(heightJohn**2);
+
+      markHigherBMI=BMIMark>BMIJohn;
+      console.log(markHigherBMI);
+   //2nd condition//
+       heightMark=1.88;
+       weightMark=95;
+       BMIMark=weightMark/(heightMark**2);
+
+       heightJohn=1.76;
+       weightJohn=85;
+       BMIJohn=weightJohn/(heightJohn**2);
+
+       markHigherBMI=BMIMark<BMIJohn;
+       console.log(markHigherBMI);
+
+
+      //prime num//
+     var num, i, chk, temp;
+     function checkPrime()
+      {
+     num = parseInt(document.getElementById("num").value);
+     if(num)
+     {
+     chk=0;
+     temp = document.getElementById("resPara");
+     temp.style.display = "block";
+     for(i=2; i<num; i++)
+     {
+      if(num%2==0)
+      {
+        chk++;
+        break;
+       }
+     }
+     if(chk==0)
+      document.getElementById("res").innerHTML = "a Prime";
+     else
+      document.getElementById("res").innerHTML = "not a Prime";
+   }
+ }
+
+
+//string or number//
+var num1 = 100;
+ if(typeof num1 == 'number'){
+	document.write(num1 + " is a number <br/>");
+ }else{
+	document.write(num1 + " is not a number <br/>");
+ }
+
+
+ //fhdjgrjthgbhjt//
+ let val=("maheshbabu");
+        if(typeof val=="string"){
+            console.log("variable is a string ");
+        }
+        else{
+            console.log("varaible is number");
+        }
+
+        
+ //sum than 10//
+        var num_ber= [2,9,1,4, 7,7,6,0];
+        for(i=0; i<num_ber.length; i++){
+            for(j=i+1; j<num_ber.length; j++){
+                if(num_ber[i] +num_ber[j] == 10){
+                    console.log(num_ber[i], num_ber[j]);   
+                }
+            }
+        }
+ </script>
+        enter the number to check palindrome:<input type="text" id="N">
+        <button onclick="palnum()">submit</button><br><br><br>
+       
+    </body>
+</html>

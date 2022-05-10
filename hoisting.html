@@ -1,0 +1,73 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+      
+        <script>
+            console.log("output ="+ a);
+            a=2;//assign//cant do with let and const//
+            var a;//declare//variable can be used before it has been declarde.and variable can be declarded afiter used//
+
+            console.log("output ="+ a);
+
+            //same result//
+            var x;//declare
+            x=4;//assign//
+             console.log(x);//displays 4//
+
+            //other case//
+            console.log("output is"+ b);
+            var b=3;//display undefined//
+
+            //for let//
+            //fruit="apple";
+           // let fruit;
+            //console.log(fruit);//
+
+            //for const//gives syntax error//
+           // tab="chair";
+           // const tab;
+              // console.log(tab);//
+         
+
+
+              //global scope//
+              let mr="john";//declared outside so it is global//
+              myFunction();
+              function myFunction(){
+                  console.log(mr);
+              }
+             //class//
+             debugger;
+             var mycarName="skoda";
+             var carmodel="model-x";
+             function startthecar(){
+                 console.log("car is started");
+
+             }
+             //using function//
+             function hoist(){
+                 a=20;
+                 var b=100;
+             }
+             hoist();
+             console.log(a);
+             console.log(b);
+             //hoist//
+             function hoist() {
+           console.log(message);
+          var message='Hoisting is all the rage!'
+              }
+            
+          hoist();
+          //other example//
+          function hois() {
+          var mess='Hoisting is all the rage!'
+          return (mess);
+            }
+
+          hois(); // Ouput: Hoisting is all the rage!
+        </script>
+    </body>
+</html>

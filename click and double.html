@@ -1,0 +1,68 @@
+<html>
+    <head>
+
+    </head>
+    <body onload="myFunction()">
+        
+        <h1 id="check" onclick="fun()" ondblclick="fun2()">hello.welcome to 10000 coders</h1>
+        <h2 id="mouse" onmouseup="mouseup()" onmousedown="mousedown()">click here.you can see changes when mouseDown() function is triggered when the mouse button is pressed down over this paragraph, and sets the color of the text to red.</h2>
+        <button  onmouseover="style.color='red'" onmouseout="style.color='yellow'" type="button" onclick="submit"></button>
+        <ul id="over">
+            <li>mouseup: mouseup event occurs when button of the mouse is released over an element</li>
+            <li>mousedown: mousedown event occurs when button of the mouse is pressed over an element. /li>
+            <li>mousemove: mousemove event occurs when button of the mouse move over an element</li>
+            <li>mouseover: mouseover event occurs when the mouse cursor moves onto the element</li>
+            <li>mouseout: mouseout event occurs when the mouse cursor out of an element. </li>
+        </ul>
+        <button id="btn">click me!!!</button>
+        <p id="para1"></p>
+        
+        <script>
+         function fun(){
+             document.getElementById("check").style.backgroundColor="purple";
+         }
+         function fun2(){
+             document.getElementById("check").style.backgroundColor="yellow";
+         }
+         function mousedown(){
+             document.getElementById("mouse").style.color="green"
+         }
+         function mouseup(){
+             document.getElementById("mouse").style.color="red"
+         }
+         //mouseover//
+         let test=document.getElementById("over");
+         //excuted only once when cursor movers over the lists//
+         over.addEventListener("mouseenter",function(event){
+             //when mouse enters//
+            event.target.style.color = "red";
+            //reset color after delay//
+            setTimeout(function(){
+                event.target.style.color="";
+            },500)
+         },false);
+         //this hndler will be executed everytime the cursor moved over a different list item//
+         over.addEventListener("mouseover",function(event){
+             //highlight the mouseover target//
+             event.target.style.color="orange";
+             //reset the color after delay//
+              setTimeout(function(){
+                  event.target.style.color="";
+
+              },500)
+         },false);
+
+         //onclick//
+          document.getElementById("btn").onclick=displayDate;
+          function displayDate(){
+              document.getElementById("para1").innerHTML=Date();
+          }
+          
+         //page load//
+         function myFunction(){
+             alert("welcome to my page");
+         }
+
+        </script>
+    </body>
+</html>

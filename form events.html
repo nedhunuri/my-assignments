@@ -1,0 +1,70 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="test.php" method="post"  onsubmit="return validate()" onreset="resetForm()">
+            username:<br><input onfocus="doSomeAction(this)" type="text" name="uname" id="uname"><br><br>
+            email:<br><input onblur="doOnBlur(this)" type="text" name="email" id="email"><br><br>
+            mobile:<br><input type="telephone" name="telephone" id="mobile" oninvalid="validateData()" onselect="fireSelectEvent(this)"><br><br>
+            
+            <select id="state" onchange="getLang(value)">
+                <option value="">select please</option>
+                <option value="html">html</option>
+                <option value="css">css</option>
+                <option value="js">js</option>
+                <option value="react">react js</option>
+                <option value="mern">mern stack</option>
+
+            </select><br><br>
+
+            <input type="search" onsearch="handleSearch()">
+
+            <input  type="submit" value="save">
+            <input type="reset" value="reset">
+        </form>
+        <script>
+            function handleSearch(){
+                console.log("welcome");
+            }
+            function getLang(valu){
+                alert(valu);
+                console.log(valu);
+            }
+             function validateData(){
+                 alert("enter mobile");
+                 
+             }
+            function fireSelectEvent(val){
+                alert("select event fired");
+                console.log(val);
+            }
+            function validate(){
+                if(document.getElementById("uname").value.trim()==""){
+                    alert("enter username");
+                    return false;
+                }
+
+                if(document.getElementById("uname").value.trim()==""){
+                    alert("enter username");
+                    return false;
+                }
+            }
+            function resetForm(){
+                alert("clear the form data")
+            }
+            function doSomeAction(element){
+                element.style.background="yellow"
+                console.log(element);
+            }
+            function doOnBlur(element){
+                console.log(element);
+            }
+            //search//
+            function searchform(){
+                var y=document.getElementById("mysearch");
+                document.getElementById("demo").innerHTML="You are searching for: " + x.value;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+       <style>
+           img{
+               width:100%;
+               height:400px;
+           }
+       </style>
+    </head>
+
+    <body>
+        <img id="cars" src=""/>
+        <script>
+          const cars= document.getElementById("cars");
+          let countcars=[
+          "https://m.media-amazon.com/images/I/815eEJfLocL._SX3000_.jpg",
+          "https://m.media-amazon.com/images/I/61TZWWADOaL._SX3000_.jpg",
+          "https://m.media-amazon.com/images/I/71cGKoSGlHL._SX3000_.jpg",
+          "https://m.media-amazon.com/images/I/71+d0EnJojL._SX3000_.jpg",
+         " https://m.media-amazon.com/images/I/61XJMtByggL._SX3000_.jpg"
+          ];
+          let i=0;
+          setInterval(function(){
+              if(i<countcars.length){
+                  cars.src=countcars[i];
+                  i++;
+              }else{
+                  i=0;
+              }
+          },2000);
+        </script>
+    </body>
+</html>

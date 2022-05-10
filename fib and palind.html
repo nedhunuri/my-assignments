@@ -1,0 +1,40 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        function checkPalindrome(string){
+            //find length of string//
+            const len=string.length;
+            //loop through half of the string//
+            for (let i=0;i<len;i++){
+                //check if first and last letter same for palindrome//
+                if(string[i]!==string[len-1-i]){
+                    return "it is not palindrome";//if does not match//
+                }
+            }
+             return "it is palindrome";//if match//
+        }
+        //take input//
+        const string=prompt("enter a string");
+        //call function//
+        const value=checkPalindrome(string);
+        console.log(value);
+
+
+        //fibonnaci//
+        //input from user//
+        const number=parseInt(prompt("enter the number of terms"));
+        let n1=0, n2=1,nextTerm;
+       
+        console.log("Fibonacci Series:");
+        for(let i=1;i<=number;i++){
+            console.log(n1);
+             nextTerm=n1+n2;
+             n1=n2;
+             n2=nextTerm;
+        }
+        </script>
+    </body>
+</html>

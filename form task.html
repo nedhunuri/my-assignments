@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body {
+            background-color: rgb(33, 220, 220);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #form-container {
+            background-color: beige;
+            padding: 50px;
+            text-align: center;
+        }
+
+        h2 {
+            margin: 0px 0px 10px 0px;
+        }
+
+        input {
+            width: 200px;
+            margin: 10px 0px;
+            padding: 10px;
+        }
+
+        input[type="submit"] {
+            width: 222px;
+            background-color: rgb(31, 95, 120);
+            border: 0px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="form-container">
+        <h2>Login</h2>
+
+        <form action="" onsubmit="return validateForm()">
+            <input type="text" placeholder="First Name" id="firstname"> <br>
+            <p id="firstError" class="error"></p>
+
+            <input type="text" placeholder="Last Name" id="lastname"> <br>
+            <p id="lastError" class="error"></p>
+
+            <input type="text" placeholder="EmailId" id="EmailId"> <br>
+            <p id="emailError" class="error"></p>
+
+            <input type="password" placeholder="Password" id="password"> <br>
+            <p id="passError" class="error"></p>
+
+            <input type="password" placeholder="Confirm password" id="confirmPassword"> <br>
+            <p id="confirmPassError" class="error"></p>
+
+            <b>Choose gender: </b><br><br>
+            <input type="radio" id="radioMale" value="Male">Male</input>
+            <input type="radio" id="radioFemale" value="Female">Female</input>
+            <br><br>
+            <input type="button" value="Check Gender" onClick="checkGender()" /><br><br>
+
+            <input type="submit">
+        </form>
+    </div>
+
+
+    <script>
+        let firstname = document.getElementById("firstname");
+        let lastname = document.getElementById("lastname");
+        let EmailId = document.getElementById("EmailId");
+        let password = document.getElementById("password");
+        let confirmPassword = document.getElementById("confirmPassword");
+
+
+
+
+        function validateForm() {
+
+            if (firstname.value == "") {
+                document.getElementById("firstError").innerHTML = "firstname is empty";
+                firstError.style.color = "red";
+                firstError.style.margin = "0px";
+            }
+            else {
+                document.getElementById("firstError").innerHTML = "";
+            }
+
+
+            if (lastname.value == "") {
+                document.getElementById("lastError").innerHTML = "lastname is empty";
+                lastError.style.color = "red";
+                lastError.style.margin = "0px";
+            }
+            else {
+                document.getElementById("lastError").innerHTML = "";
+            }
+
+
+            if (EmailId.value == "") {
+                document.getElementById("emailError").innerHTML = "Email is empty";
+                emailError.style.color = "red";
+                emailError.style.margin = "0px";
+            }
+            else {
+                document.getElementById("emailError").innerHTML = "";
+            }
+
+
+            if (password.value == "") {
+                document.getElementById("passError").innerHTML = "password is empty";
+                passError.style.color = "red";
+                passError.style.margin = "0px";
+            }
+            else {
+                document.getElementById("passError").innerHTML = "";
+            }
+
+
+            if (confirmPassword.value == "" || confirmPassword.value !== password.value) {
+                document.getElementById("confirmPassError").innerHTML = "password is not matching";
+                confirmPassError.style.color = "red";
+                confirmPassError.style.margin = "0px";
+            }
+            else {
+                document.getElementById("confirmPassError").innerHTML = "";
+            }
+
+            return false;
+        }
+        function checkGender() {
+            if (document.getElementById('radioMale').checked)
+                alert("You have selected Male.");
+            else
+                alert("You have selected Female.");
+        }
+
+    </script>
+</body>
+
+</html>

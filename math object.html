@@ -1,0 +1,104 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="p1"></p>
+        <p id="demo"></p>
+        <button onclick="myStop()">Stop the time</button>
+        <script>
+          const d=new Date();
+          console.log(d);
+          //specified date and time//
+          const e=new Date(2010,8,24,9,20,33,1);
+          console.log(e);
+
+          //get date//
+          const f=new Date();
+          let day=f.getDate();
+          console.log(day);
+
+          //get day returns the day of the week(0-6)//
+          const a=new Date();
+          let day1=a.getDay();
+          console.log(day1);
+
+           //get day returns the day of the week(0-6)//
+           const weekday=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+           const b=new Date();
+           let day2=weekday[b.getDay()];
+           console.log(day2);
+
+           //get full year//
+           const c=new Date();
+           let year=c.getFullYear();
+           console.log(year);
+
+
+           //get hours//
+            const g=new Date();
+            let hour=d.getHours();
+            console.log(hour);
+
+
+            //get minutes//
+            const h=new Date();
+            let min=h.getMinutes();
+            console.log(min);
+
+            //setTime//
+            setInterval(displaywelcomestudents,1000)//Display "Hello" every second (1000 milliseconds)://
+            function displaywelcomestudents(){
+                console.log("hello")
+            }
+
+
+          //class settimeout//
+           const Mytimeout=setTimeout(greet,5000);
+           function greet(){
+               document.getElementById("p1").innerHTML="welcome to 10000 coders";
+           }
+           //setinterval and clear interval//
+            const myInterval=setInterval(myTimer,1000);
+            function myTimer(){
+                const date=new Date();
+                document.getElementById("demo").innerHTML=date.toLocaleTimeString();
+            }
+            function myStop(){
+                clearInterval(myInterval);
+            }
+            //mathpi//
+           let x=Math.PI;
+           let y=Math.sqrt(49);
+           console.log(x);
+           console.log(y);
+           //ceil//
+           let z=Math.ceil(2.4);
+           console.log(z);
+           //cubic root//
+           let s=Math.cbrt(729);
+           console.log(s);
+           //floor//
+           let t=Math.floor(8.6);
+           console.log(t);
+           //random number//
+           let u=Math.random();
+           console.log(u);
+           //square root//
+           let v=Math.pow(16,2);
+           console.log(v);
+           //min//
+           let w=Math.min(3,76);
+           let l=Math.max(23,67);
+           console.log(w);
+           console.log(l);
+           console.log(Math.log(1));
+           console.log(Math.sin(1/2));
+           console.log(Math.cos(0));
+           console.log(Math.tan(1));
+           console.log(Math.log2(0));
+           //concate//
+           
+        </script>
+    </body>
+</html>
